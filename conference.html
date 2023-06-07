@@ -34,6 +34,7 @@
         margin-right: auto;
         width: 50%;
     }
+
 </style>
 <body>
     <h1>Genetics of healthcare cost - genCOST consortium</h1>
@@ -48,9 +49,10 @@
         The Danish National Patient Registry (DNPR) was established in 1976 and tracks activity at Danish hospitals. 
         The registry contains data on which diseases the patients have (through ICD codes), how these conditions were treated,
         which hospital they have visited, time of admission, time of discharge, etc. 
-        Additionally the registr includes all patient information such as place of residence, sex, age.
+        Additionally the registry includes all patient information such as place of residence, sex, age.
         There is a specialized version of DNPR, which contains the Diagnosis-Related Groups (DRG) that are used to track
         billing information by the hopsitals.
+        In Denmark the healthcare system is public, thus the reimbursement is provided by the state.
     </p>
     <p>
         DRGs were initially introduced in the 1980s as a means to standardize and streamline the payment process for Medicare patients 
@@ -150,34 +152,42 @@
     <h3>Genome-Wide Association Study</h3>
     <h4 style="text-align: center;"> All patients manhattan plot</h4>
     <img src="conference-images/all.png" alt="Manhattan plot" class="center">
+    <br>
 
     <h4 style="text-align: center;"> Female patients manhattan plot</h4>
     <img src="conference-images/females.png" alt="Manhattan plot" class="center">
+    <br>
 
     <h4 style="text-align: center;"> Male patients manhattan plot</h4>
     <img src="conference-images/males.png" alt="Manhattan plot" class="center">
+    <br>
 
     <h4 style="text-align: center;"> Ages 5 - 18 manhattan plot</h4>
     <img src="conference-images/age-05.png" alt="Manhattan plot" class="center">
+    <br>
 
     <h4 style="text-align: center;"> Ages 19 - 36 manhattan plot</h4>
     <img src="conference-images/age-19.png" alt="Manhattan plot" class="center">
+    <br>
 
     <h4 style="text-align: center;"> Ages 35 - 55 manhattan plot</h4>
     <img src="conference-images/age-36.png" alt="Manhattan plot" class="center">
+    <br>
 
     <h4 style="text-align: center;"> Ages 56 - 75 manhattan plot</h4>
     <img src="conference-images/age-56.png" alt="Manhattan plot" class="center">
+    <br>
 
     <h4 style="text-align: center;"> Ages 76+ manhattan plot</h4>
     <img src="conference-images/age-76.png" alt="Manhattan plot" class="center">
-    
+    <br>    
 
     <h3>Phenome-Wide Association Studies</h3>
     <p>
          A phenome-wide association study (PheWAS) was used to extract associations between the top GWAS hits and the other
-         phenotypes recorded in the <em>DEGEN</em> cohort. The PheWAS was run using our inhouse pipeline connected with the 
-         CHB. And we looked for associations amongst the top hits from each GWAS and a total of 1,275 phenotypes which were 
+         phenotypes recorded in the <em>DEGEN</em> cohort. 
+         The PheWAS was run using our inhouse pipeline connected with the CHB. 
+         We explored putative associations amongst the top hits from each GWAS and a total of 1,275 phenotypes which were 
          available for the DEGEN protocol.
     </p>
     <p>
@@ -188,13 +198,26 @@
     </p>
     <h4 style="text-align: center;">PheWAS manhattan plot of top SNP</h4>
     <img src="conference-images/phewas.png" alt="PheWAS manhattan plot" class="center">
+    <br>
 
     <h3>Sexual dimorphism in effect size</h3>
     <p>
         We collected the most significant hits from the GWASs on the female and male strata and compared their effect sizes.
         Two loci from the female strata showed strong association in effect size difference with the male patients. 
-        The loci have been highlighted as light green in the Miami plot below.
+        The loci have been highlighted as light green in the Miami plot below (female patients: darker colours, male patients: lighter colours).
     </p>
     <h4 style="text-align: center;"> Miami plot</h4>
-    <img src="conference-images/miami.png" alt="Miami plot" class="center">
+    <img src="conference-images/miami copy.png" alt="Miami plot" class="center">
+
+    <hr>
+    <h3>Contributions</h3>
+    <p>
+        This project is a collaborative effort of the Brunak group from the Novo Nordisk Foundation Center for Protein Research and Denmark Statistics as 
+        part of the genCOST consortium. The main contributors are: Giannos (Ioannis) Louloudis, Hannah Currant, Thomas Folkman, Laust Mortensen, Søren Brunak.
+    </p>
+    <p>
+        <big>Contact info:</big><br>
+        Giannos (Ioannis) Louloudis <br>
+        e-mail: <a href="">ioannis.louloudis@cpr.ku.dk</a>
+    </p>
 </body>
