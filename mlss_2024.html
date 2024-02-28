@@ -63,50 +63,16 @@
 <body>
     <h1>Data Driven Drug Repurposing using Graph Neural Networks</h1>
     <hr>
-    <h2>Project overview</h2>
-    <div class="image-container">
-        <img src="images/repositioning_overview.png" alt="Repositioning project overview." width="900" style="margin-left: 50px;">
+    <h2>Top hits</h2>
+
+    <div class="center">
+        <ol>
+            <li><a href="mlss_extras/hypertensive disorder_Carboplatin.html">Hypertensive disorder - Carboplatin</a></li>
+            <li><a href="mlss_extras/hypertensive disorder_Magaldrate.html">Hypertensive disorder - Magaldrate</a></li>
+            <li><a href="mlss_extras/kidney disease_Telisotuzumab vedotin.html">Kidney disease - Telisotuzumab vedotin</a></li>
+            <li><a href="mlss_extras/liver disease_Abciximab.html">Liver disease - Abciximab</a></li>
+        </ol>
     </div>
-
-    <h2>Electronic Health Records in Denmark</h2>
-    <p>
-        The BigTempHealth (BTH) project contains healthcare data from the Capital Region and Region Zealand of Denmark
-        during the years <strong>2006-2016</strong> and includes ~2.9 million patients. The complete Electronic Health Records (EHRs) contain 
-        data on diagnoses, (hospital) prescriptions/medication, lab-test values and clinical notes.
-    </p>
-    <p>
-        Diagnoses are in the Danish Healthcare system are recorded in the International Classification of Diseases (ICD) system
-        and more specifically as <strong>ICD-10</strong> codes. The prescriptions are stored based on the Anatomical Therapeutic
-        Chemical Classification System (ATC) system as <strong>ATC</strong> codes. As a result information stored in the Danish EHRs
-        can easily be supplented by open-source data which use these standardized formats.
-    </p>
-    <p>
-        In the <em>current</em> stage of this project, data on diagnoses and medication were extracted for the patients
-        in BTH. Diagnoses assigned within the same hospital visit or within a time-span of 7
-        days were paired together as a <em>diagnosis-pair</em>. The same process was repeated for medication. Diagnoses and
-        prescriptions given within a span of 7 days were used to generated diagnoses-prescription
-        pairs.
-    </p>
-
-    <h2>Graph Neural Networks</h2>
-    <p>
-        Graph Neural Networks (GNNs) provide a versatile tool to tackle graph-structured data with deep learning approaches. GNNs can make
-        effective use of the interconnected nature of graphs and scale well with the large-scall of real-world datasets. In our work we fit
-        two different GNN algorithms on two large-scale knowledge graphs. The GNNs were designed based on the same template and had their 
-        hyper-parameters (<em>number of epochs, learning rate, number of hidden dimensions</em>) optimized using the hyper-parameter 
-        optimization framework <strong>Optuna</strong>. An additional hyper-parameter was the type of graph architecture the neural network 
-        should use. The choices were graph convolution layers, SAGE layers and different mixes between the two.
-    </p>
-    <p>
-        The goal of this GNN is to perfrm <strong>link-prediction</strong> between the drug-disease type nodes. The link-prediction task is
-        performed through a classifier which takes effect after the graph part of the neural network and calculates a similarity score through 
-        the dot product of the drug and disease nodes.
-    </p>
-
-    <h2>Drug repositioning</h2>
-
-    <p>A sample of the top-hits from the real-world graph (<em>graph-B</em>).</p>
-    <p>Some examples of the model's output are: <a href="mlss_extras/epilepsy_Insulin human.html">epilepsy-insulin</a></p>
 
     <div class="table-container">
         <table>
